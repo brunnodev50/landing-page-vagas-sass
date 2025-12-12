@@ -4,7 +4,7 @@
 
 > Uma Landing Page de carreiras moderna, responsiva e focada na experiência do candidato, simulando o fluxo real de aplicação em vagas.
 
-🔗 **[Acesse o Projeto Online (Live Demo)](https://brunnodev50.github.io/nextalent-recruitment-ui/)**
+🔗 **[Acesse o Projeto Online (Live Demo)](https://brunnodev50.github.io/landing-page-vagas-sass/)**
 
 ## 📸 Preview
 
@@ -18,7 +18,7 @@
 Este projeto foi desenvolvido para demonstrar domínio em arquitetura Front-end sem dependência de frameworks pesados:
 
 * **HTML5 Semântico:** Uso correto de tags (`<dialog>`, `<header>`, `<main>`, `<article>`) para acessibilidade e SEO.
-* **CSS Architecture:** Estrutura organizada, variáveis CSS (Custom Properties) e design system consistente.
+* **SASS/SCSS:** Organização avançada com variáveis CSS, Mixins para responsividade e aninhamento (Nesting).
 * **Vanilla JavaScript (ES6+):**
     * Manipulação de DOM performática.
     * Lógica de Modal nativa com API `<dialog>`.
@@ -29,9 +29,9 @@ Este projeto foi desenvolvido para demonstrar domínio em arquitetura Front-end 
 ## 🛠️ Como rodar localmente
 
 ### Pré-requisitos
-Apenas um navegador moderno. Não é necessário instalação de `node_modules`.
+Apenas um navegador moderno. Não é necessário instalação de `node_modules` para visualizar a versão final.
 
 ### Instalação
 1. Clone o repositório:
 ```bash
-git clone [https://github.com/brunnodev50/nextalent-recruitment-ui.git](https://github.com/brunnodev50/nextalent-recruitment-ui.git)
+git clone [https://github.com/brunnodev50/landing-page-vagas-sass.git](https://github.com/brunnodev50/landing-page-vagas-sass.git)

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NexTalent | Carreiras</title>
+    
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="#" class="logo">Nex<span>Talent</span></a>
+            <nav class="nav">
+                <a href="#vagas" class="nav__link">Vagas Abertas</a>
+                <a href="#cultura" class="nav__link">Cultura</a>
+                <a href="#login" class="btn btn--outline">Área do Recrutador</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__content">
+                <span class="badge">Junte-se ao time</span>
+                <h1 class="hero__title">Construa o futuro da tecnologia conosco.</h1>
+                <p class="hero__text">Estamos buscando mentes criativas para resolver problemas complexos. Trabalhe de onde quiser, com quem você admira.</p>
+                <a href="#vagas" class="btn btn--primary">Ver Vagas Disponíveis</a>
+            </div>
+        </section>
+
+        <section id="vagas" class="jobs section-padding">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Vagas em destaque</h2>
+                    <p>Encontre a posição ideal para o seu perfil.</p>
+                </div>
+                
+                <div class="jobs__grid" id="jobs-container"></div>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="apply-modal" class="modal">
+        <div class="modal__content">
+            <button class="modal__close" id="close-modal" aria-label="Fechar modal">
+                <i class="ph ph-x"></i>
+            </button>
+            
+            <div class="modal__header">
+                <h3>Candidatar-se</h3>
+                <p>Você está se candidatando para: <span id="modal-job-title" class="highlight-text">--</span></p>
+            </div>
+
+            <form id="application-form" class="form">
+                <div class="form__group">
+                    <label for="name">Nome Completo</label>
+                    <input type="text" id="name" placeholder="Ex: João Silva" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="email">E-mail Corporativo ou Pessoal</label>
+                    <input type="email" id="email" placeholder="seu@email.com" required>
+                </div>
+
+                <div class="form__group">
+                    <label for="linkedin">URL do LinkedIn</label>
+                    <input type="url" id="linkedin" placeholder="https://linkedin.com/in/..." required>
+                </div>
+
+                <div class="form__group">
+                    <label>Currículo (PDF)</label>
+                    <div class="file-upload" id="drop-zone">
+                        <input type="file" id="resume" accept=".pdf" hidden>
+                        <i class="ph ph-cloud-arrow-up icon-lg"></i>
+                        <p>Arraste seu PDF aqui ou <span class="link-text">clique para buscar</span></p>
+                        <small id="file-name" class="file-name"></small>
+                    </div>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">
+                    Enviar Candidatura <i class="ph ph-paper-plane-right"></i>
+                </button>
+            </form>
+        </div>
+    </dialog>
+
+    <div id="toast" class="toast">Candidatura enviada com sucesso!</div>
+
+    <script src="script.js"></script>
+</body>
+</html>

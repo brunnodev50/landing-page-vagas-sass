@@ -34,4 +34,4 @@ Apenas um navegador moderno. Não é necessário instalação de `node_modules` 
 ### Instalação
 1. Clone o repositório:
 ```bash
-git clone [https://github.com/brunnodev50/landing-page-vagas-sass.git](https://github.com/brunnodev50/landing-page-vagas-sass.git)
+git clone https://github.com/brunnodev50/landing-page-vagas-sass.git
